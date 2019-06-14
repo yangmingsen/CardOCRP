@@ -228,7 +228,6 @@
 <script>
 
       function upload() {
-          depenci2();
         var formData = new FormData($('#upfile')[0]);
         $.ajax({
             url : "http://127.0.0.1:5000/up_file",
@@ -285,7 +284,7 @@
         });
 
         //============================================
-        $("#upload-file1").bind('change',function(){
+        $("#upload-file").bind('change',function(){
 
             var fordate=new FormData();
             console.log("改变了");
